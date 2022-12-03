@@ -3,20 +3,24 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+h1{
+  text-align: center;
+}
+
 .row {
   max-width: 100%;
   display: grid;
   grid-template-columns: repeat(12, calc(100% / 12 - (11 * 10px / 12)));
-  
-  gap: 10px 10px;
-  padding: 10px;
+  gap: 5px 5px;
+  padding: 5px;
 }
-
-.row > :nth-child(1) > :nth-child(1) {
+h3 {
   border: 1px solid black;
-  background-color: brown;
+}
+.row > :nth-child(1) > :nth-child(1) {
+  background-color: rgb(255, 163, 71);
   position: absolute;
-  color: white;
   padding: 5px 15px;
   right: 0;
   top: 0;
@@ -24,8 +28,7 @@
   display: block;
 }
 .row > :nth-child(2) > :nth-child(1) {
-  border: 1px solid black;
-  background-color: blue;
+  background-color: rgb(201, 91, 177);
   color: white;
   position: absolute;
   padding: 5px 15px;
@@ -36,9 +39,7 @@
 }
 
 .row > :nth-child(3) > :nth-child(1) {
-  border: 1px solid black;
-  background-color: darkgreen;
-  color: white;
+  background-color: rgb(252, 230, 210);
   position: absolute;
   padding: 5px 15px;
   right: 0;
@@ -62,30 +63,30 @@
   .row :nth-child(1),
   .row :nth-child(2),
   .row :nth-child(3) {
-    background-color: yellow;
+    background-color: rgb(255, 255, 181);
     border: 1px solid black;
     position: relative;
     float: left;
     grid-column: 1 / 12;
   }
 }
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 769px) and (max-width: 992px) {
   .row :nth-child(1) {
-    background-color: yellow;
+    background-color: rgb(255, 255, 181);
     border: 1px solid black;
     position: relative;
     float: left;
     grid-column: 1 / 6;
   }
   .row :nth-child(2) {
-    background-color: yellow;
+    background-color: rgb(255, 255, 181);
     border: 1px solid black;
     position: relative;
     float: left;
     grid-column: 7 / 12;
   }
   .row :nth-child(3) {
-    background-color: yellow;
+    background-color: rgb(255, 255, 181);
     border: 1px solid black;
     position: relative;
     float: left;
@@ -93,23 +94,23 @@
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 993px) {
   .row :nth-child(1) {
-    background-color: yellow;
+    background-color: rgb(255, 255, 181);
     border: 1px solid black;
     position: relative;
     float: left;
     grid-column: 1 / 4;
   }
   .row :nth-child(2) {
-    background-color: yellow;
+    background-color: rgb(255, 255, 181);
     border: 1px solid black;
     position: relative;
     float: left;
     grid-column: 5 / 8;
   }
   .row :nth-child(3) {
-    background-color: yellow;
+    background-color: rgb(255, 255, 181);
     border: 1px solid black;
     position: relative;
     float: left;
