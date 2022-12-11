@@ -71,24 +71,22 @@ h3 {
   .row :nth-child(2),
   .row :nth-child(3) {
     position: relative;
-    float: left;
+    margin-right: auto;
+    margin-left: auto;
     grid-column: 1 / 12;
   }
 }
 @media (min-width: 769px) and (max-width: 992px) {
   .row :nth-child(1) {
     position: relative;
-    float: left;
     grid-column: 1 / 6;
   }
   .row :nth-child(2) {
     position: relative;
-    float: left;
     grid-column: 7 / 12;
   }
   .row :nth-child(3) {
     position: relative;
-    float: left;
     grid-column: 1 / 12;
   }
 }
@@ -96,17 +94,14 @@ h3 {
 @media (min-width: 993px) {
   .row :nth-child(1) {
     position: relative;
-    float: left;
     grid-column: 1 / 4;
   }
   .row :nth-child(2) {
     position: relative;
-    float: left;
     grid-column: 5 / 8;
   }
   .row :nth-child(3) {
     position: relative;
-    float: left;
     grid-column: 9 / 12;
   }
 }
